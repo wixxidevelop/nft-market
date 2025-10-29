@@ -19,7 +19,7 @@ export default function CreateNFT() {
     // Only check authentication after component mounts on client
     if (!isClient) return;
     
-    const token = localStorage.getItem('auth_token');
+    const token = localStorage.getItem('token');
     if (!token) {
       router.push('/auth/login');
       return;

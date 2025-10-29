@@ -17,16 +17,14 @@ export default function Collect() {
 
   useEffect(() => {
     // Only check authentication after component mounts on client
-    if (!isClient) return;
+if (!isClient) return;
     
-    // Check authentication status
-    const authStatus = localStorage.getItem('isAuthenticated');
-    if (authStatus === 'true') {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(false);
+    const token = localStorage.getItem('token');
+    if (!token) {
       router.push('/auth/login');
+      return;
     }
+    setIsAuthenticated(true);
   }, [router, isClient]);
 
   // Show loading state while checking authentication or during SSR
