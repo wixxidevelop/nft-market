@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="__className_ee270e">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image"
+        imageSrcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=3840&amp;q=75 2x"
+        fetchPriority="high" />
+    <link rel="preload" as="image"
+        imageSrcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.a2464874.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.a2464874.png&amp;w=3840&amp;q=75 2x"
+        fetchPriority="high" />
+    <link rel="stylesheet" href="/_next/static/css/cac776ac9ce02dcf.css" data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-81836f1f49cb37e3.js" />
+    <script src="/_next/static/chunks/fd9d1056-105fe22286d3eb2c.js" async=""></script>
+    <script src="/_next/static/chunks/7023-e06cf6edf2dea694.js" async=""></script>
+    <script src="/_next/static/chunks/main-app-4625044e792201db.js" async=""></script>
+    <script src="/_next/static/chunks/737dfa3e-f63bcc1362bb70b2.js" async=""></script>
+    <script src="/_next/static/chunks/bc9c3264-650823b93ed85320.js" async=""></script>
+    <script src="/_next/static/chunks/2499-a1ba93aac676e0ef.js" async=""></script>
+    <script src="/_next/static/chunks/231-ed670c68b821b029.js" async=""></script>
+    <script src="/_next/static/chunks/6907-04bf329e09f43fb1.js" async=""></script>
+    <script src="/_next/static/chunks/932-8b6360adc0a36a78.js" async=""></script>
+    <script src="/_next/static/chunks/9745-3be823fbe51af1aa.js" async=""></script>
+    <script src="/_next/static/chunks/8173-b8549db0355704fc.js" async=""></script>
+    <script src="/_next/static/chunks/1435-0cd44412902d69dd.js" async=""></script>
+    <script src="/_next/static/chunks/app/(site)/marketplace/page-bd6bd82a92f53575.js" async=""></script>
+    <script src="/_next/static/chunks/2592-f9a718d58d545bfa.js" async=""></script>
+    <script src="/_next/static/chunks/5369-f0c567a838e8ded7.js" async=""></script>
+    <script src="/_next/static/chunks/1463-79c350fff5bc5d5a.js" async=""></script>
+    <script src="/_next/static/chunks/9753-cc60dc311db9726b.js" async=""></script>
+    <script src="/_next/static/chunks/app/(agreements)/layout-523e9339fd9d9983.js" async=""></script>
+    <script src="/_next/static/chunks/920-703e9377c9999882.js" async=""></script>
+    <script src="/_next/static/chunks/app/layout-756a7ce3d0f3ffcc.js" async=""></script>
+    <script src="/_next/static/chunks/app/(site)/layout-0f21379b9db3d737.js" async=""></script>
+    <title>Etheryte</title>
+    <meta name="description"
+        content="Etheryte emerges as a standout in the realm of web3 marketplaces, securing its status as the primary and most extensive platform for NFTs and crypto collectibles. Engage with Etheryte to browse, design, acquire, exchange, and auction NFTs effortlessly." />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="218x218" />
+    <meta name="next-size-adjust" />
+    <script src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" noModule=""></script>
+</head>
+
+<body class="relative min-h-[100dvh] text-charcoal">
+    <style>
+        #nprogress {
+            pointer-events: none
+        }
+
+        #nprogress .bar {
+            background: #7A4FD1;
+            position: fixed;
+            z-index: 1600;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px
+        }
+
+        #nprogress .peg {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 100px;
+            height: 100%;
+            box-shadow: 0 0 10px #7A4FD1, 0 0 5px #7A4FD1;
+            opacity: 1;
+            -webkit-transform: rotate(3deg) translate(0px, -4px);
+            -ms-transform: rotate(3deg) translate(0px, -4px);
+            transform: rotate(3deg) translate(0px, -4px)
+        }
+
+        #nprogress .spinner {
+            display: block;
+            position: fixed;
+            z-index: 1600;
+            top: 15px;
+            right: 15px
+        }
+
+        #nprogress .spinner-icon {
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            border-top-color: #7A4FD1;
+            border-left-color: #7A4FD1;
+            border-radius: 50%;
+            -webkit-animation: nprogress-spinner 400ms linear infinite;
+            animation: nprogress-spinner 400ms linear infinite
+        }
+
+        .nprogress-custom-parent {
+            overflow: hidden;
+            position: relative
+        }
+
+        .nprogress-custom-parent #nprogress .bar,
+        .nprogress-custom-parent #nprogress .spinner {
+            position: absolute
+        }
+
+        @-webkit-keyframes nprogress-spinner {
+            0% {
+                -webkit-transform: rotate(0deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes nprogress-spinner {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+    <div data-overlay-container="true">
+        <div class="flex flex-col justify-between min-h-[100dvh]">
+            <div>
+                <header class="fixed top-0 left-0 right-0 z-30 py-3 bg-white border-b border-light-300">
+                    <div class="max-w-[84rem] mx-auto px-3 md:px-5 lg:px-2">
+                        <div class="flex justify-between items-center">
+                            <section><a href="/"><img alt="Logo" fetchPriority="high" width="1875" height="601"
+                                        decoding="async" data-nimg="1" class="w-6 sm:w-6 md:w-8"
+                                        style="color:transparent"
+                                        srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.a2464874.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.a2464874.png&amp;w=3840&amp;q=75 2x"
+                                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.a2464874.png&amp;w=3840&amp;q=75" /></a>
+                            </section>
+                            <section class="flex items-center gap-4 md:gap-6"><button
+                                    class="inline-flex items-center justify-center font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-25 dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50/90 w-12 h-12 bg-white border border-light-300 text-black rounded-lg hover:bg-white"><svg
+                                        stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                        stroke-linecap="round" stroke-linejoin="round" height="24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </svg></button><a href="/dashboard">
+                                    <div class="bg-white border border-light-300 py-1.5 px-3 rounded-lg">
+                                        <div class="flex items-center gap-2">
+                                            <div>
+                                                <div><span
+                                                        class="relative flex shrink-0 overflow-hidden rounded-full h-9 w-9"><span
+                                                            class="flex h-full w-full items-center justify-center rounded-full bg-neutral-100 dark:bg-neutral-800 text-charcoal uppercase">m</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="hidden md:flex items-center gap-1">
+                                                <p class="text-sm font-bold">meta3905</p>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></section>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <main>
+                <div class="h-[16rem] md:h-[20rem] relative gaming-bg bg-top bg-repeat">
+                    <div class="bg-gradient-to-b from-black/90 via-black/50 to-black/10 h-full">
+                        <div class="h-[68px]"></div>
+                        <div class="max-w-[84rem] mx-auto px-3 md:px-5 lg:px-2">
+                            <div
+                                class="absolute -bottom-8 flex items-center justify-center rounded-lg bg-white h-[4.5rem] w-[4.5rem] md:-bottom-12 md:h-[7.5rem] md:w-[7.5rem] md:rounded-xl">
+                                <img alt="Art PFP" loading="lazy" width="1000" height="750" decoding="async"
+                                    data-nimg="1" class="rounded-md h-16 w-16 md:h-28 md:w-28 md:rounded-lg"
+                                    style="color:transparent"
+                                    srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarketplace-pfp.f455473f.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarketplace-pfp.f455473f.jpg&amp;w=2048&amp;q=75 2x"
+                                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarketplace-pfp.f455473f.jpg&amp;w=2048&amp;q=75" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="mt-8 mb-2 py-4 md:mt-14 md:mb-4">
+                    <div class="max-w-[84rem] mx-auto px-3 md:px-5 lg:px-2">
+                        <div class="flex flex-col gap-4"><span aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton max-w-[16rem] h-16"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton h-10 max-w-[60rem]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span class="react-loading-skeleton h-12 max-w-sm"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span></div>
+                    </div>
+                </section>
+                <section class="py-6 mb-3 md:py-8 md:mb-4">
+                    <div class="max-w-[84rem] mx-auto px-3 md:px-5 lg:px-2">
+                        <div class="grid gap-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span><span
+                                aria-live="polite" aria-busy="true"><span
+                                    class="react-loading-skeleton rounded-xl h-[330px] xs:h-[220px] sm:h-[240px] md:h-[315px]"
+                                    style="--base-color:#f5f5f5;--highlight-color:#d4d4d4">‌</span><br /></span></div>
+                    </div>
+                </section>
+            </main>
+            <footer class="sticky bg-black text-white">
+                <div class="max-w-[84rem] mx-auto px-3 md:px-5 lg:px-2">
+                    <section class="w-full py-8 space-y-4 md:hidden md:w-[90%] md:py-12 lg:w-3/4 xl:w-1/2"><img
+                            alt="Logo" fetchPriority="high" width="1875" height="601" decoding="async" data-nimg="1"
+                            class="w-36 sm:w-40 md:w-48" style="color:transparent"
+                            srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=3840&amp;q=75 2x"
+                            src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=3840&amp;q=75" />
+                        <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and
+                            tips and tricks for navigating Etheryte.</p>
+                        <form class="flex flex-col md:items-center gap-3 md:flex-row"><input type="email"
+                                class="flex h-12 w-full rounded-lg border border-neutral-200 bg-white px-4 py-2 text-base ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-0 focus-visible:border-neutral-500 focus-visible:ring-neutral-400 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 max-w-lg text-charcoal"
+                                title="email" placeholder="Enter your email address" value="" /><button
+                                class="inline-flex items-center justify-center rounded-lg ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300 text-neutral-50 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50/90 h-11 px-6 py-2 gap-2 self-start bg-white/20 font-bold hover:bg-white/30 disabled:opacity-80"><span>Submit</span></button>
+                        </form>
+                    </section>
+                    <section
+                        class="grid gap-8 border-t border-dark-100 py-8 md:py-12 md:border-none md:gap-2 md:grid-cols-[5fr_2fr_2fr_2fr] lg:grid-cols-[5fr_2fr_2fr_2fr]">
+                        <div class="hidden w-full space-y-4 md:block md:w-[90%]"><img alt="Logo" fetchPriority="high"
+                                width="1875" height="601" decoding="async" data-nimg="1" class="w-36 sm:w-40 md:w-48"
+                                style="color:transparent"
+                                srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=3840&amp;q=75 2x"
+                                src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-white.a2464874.png&amp;w=3840&amp;q=75" />
+                            <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops,
+                                and tips and tricks for navigating Etheryte.</p>
+                            <form class="space-y-3"><input type="email"
+                                    class="flex h-12 w-full rounded-lg border border-neutral-200 bg-white px-4 py-2 text-base ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-0 focus-visible:border-neutral-500 focus-visible:ring-neutral-400 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-800 dark:bg-neutral-950 dark:ring-offset-neutral-950 dark:placeholder:text-neutral-400 dark:focus-visible:ring-neutral-300 max-w-lg text-charcoal"
+                                    title="email" placeholder="Enter your email address" value="" /><button
+                                    class="inline-flex items-center justify-center rounded-lg ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300 text-neutral-50 dark:bg-neutral-50 dark:text-neutral-900 dark:hover:bg-neutral-50/90 h-11 px-6 py-2 gap-2 bg-white/20 font-bold hover:bg-white/30 disabled:opacity-80"><span>Submit</span></button>
+                            </form>
+                        </div>
+                        <div class="space-y-3 md:space-y-4">
+                            <h3 class="font-bold uppercase">My Account</h3>
+                            <div class="flex flex-col gap-2 text-light-200"><a
+                                    class="self-start cursor-pointer hover:text-blue-400"
+                                    href="/auth/login">Profile</a><a
+                                    class="self-start cursor-pointer hover:text-blue-400"
+                                    href="/auth/login">Collections</a><a
+                                    class="self-start cursor-pointer hover:text-blue-400" href="/auth/login">Mint</a>
+                            </div>
+                        </div>
+                        <div class="space-y-3 md:space-y-4">
+                            <h3 class="font-bold uppercase">Categories</h3>
+                            <div class="flex flex-col gap-2 text-light-200"><a class="self-start hover:text-blue-400"
+                                    href="/category/art">
+                                    <div>Art</div>
+                                </a><a class="self-start hover:text-blue-400" href="/category/gaming">
+                                    <div>Gaming</div>
+                                </a><a class="self-start hover:text-blue-400" href="/category/memberships">
+                                    <div>Memberships</div>
+                                </a><a class="self-start hover:text-blue-400" href="/category/pfps">
+                                    <div>PFPs</div>
+                                </a><a class="self-start hover:text-blue-400" href="/category/photography">
+                                    <div>Photography</div>
+                                </a><a class="self-start hover:text-blue-400" href="/category/others">
+                                    <div>Others</div>
+                                </a></div>
+                        </div>
+                        <div class="space-y-3 md:space-y-4">
+                            <h3 class="font-bold uppercase">Company</h3>
+                            <div class="flex flex-col gap-2 text-light-200"><a class="self-start hover:text-blue-400"
+                                    href="https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2?a=0x1681195C176239ac5E72d9aeBaCf5b2492E0C4ee">
+                                    <div>Transaction History (Block Explorer)</div>
+                                </a><a class="self-start hover:text-blue-400" href="/privacy-policy">
+                                    <div>Privacy Policy</div>
+                                </a><a class="self-start hover:text-blue-400" href="/terms-of-service">
+                                    <div>Terms of Service</div>
+                                </a></div>
+                        </div>
+                    </section>
+                    <section
+                        class="flex flex-col items-center text-sm justify-between py-2 border-t border-dark-100 md:py-4 md:flex-row md:text-base">
+                        <div>© <!-- -->2018 - 2025 Etheryte, Inc</div>
+                        <div class="flex items-center divide-x-2 divide-dark-100"><a
+                                class="pr-2 hover:text-blue-400 md:pr-3" href="/privacy-policy">Privacy Policy</a><a
+                                class="pl-2 hover:text-blue-400 md:pl-3" href="/terms-of-service">Terms of Service</a>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="/_next/static/chunks/webpack-81836f1f49cb37e3.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/media/a48d7de5fcdf911f-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/cac776ac9ce02dcf.css\",\"style\"]\n"])</script>
+    <script>self.__next_f.push([1, "3:I[5751,[],\"\"]\n5:I[6513,[],\"ClientPageRoot\"]\n6:I[1248,[\"3033\",\"static/chunks/737dfa3e-f63bcc1362bb70b2.js\",\"1582\",\"static/chunks/bc9c3264-650823b93ed85320.js\",\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"231\",\"static/chunks/231-ed670c68b821b029.js\",\"6907\",\"static/chunks/6907-04bf329e09f43fb1.js\",\"932\",\"static/chunks/932-8b6360adc0a36a78.js\",\"9745\",\"static/chunks/9745-3be823fbe51af1aa.js\",\"8173\",\"static/chunks/8173-b8549db0355704fc.js\",\"1435\",\"static/chunks/1435-0cd44412902d69dd.js\",\"1938\",\"static/chunks/app/(site)/marketplace/page-bd6bd82a92f53575.js\"],\"default\",1]\n7:I[9275,[],\"\"]\n8:I[1343,[],\"\"]\na:I[683,[\"3033\",\"static/chunks/737dfa3e-f63bcc1362bb70b2.js\",\"1582\",\"static/chunks/bc9c3264-650823b93ed85320.js\",\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"231\",\"static/chunks/231-ed670c68b821b029.js\",\"6907\",\"static/chunks/6907-04bf329e09f43fb1.js\",\"932\",\"static/chunks/932-8b6360adc0a36a78.js\",\"9745\",\"static/chunks/9745-3be823fbe51af1aa.js\",\"8173\",\"static/chunks/8173-b8549db0355704fc.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"5369\",\"static/chunks/5369-f0c567a838e8ded7.js\",\"1463\",\"static/chunks/1463-79c350fff5bc5d5a.js\",\"9753\",\"static/chunks/9753-cc60dc311db9726b.js\",\"6001\",\"static/chunks/app/(agreements)/layout-523e9339fd9d9983.js\"],\"default\"]\nb:I[9593,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunks/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"\"]\nc:I[6372,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunks/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"default\"]\nd:I[6786,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunks/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"default\"]\ne:I[773,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunk"])</script>
+    <script>self.__next_f.push([1, "s/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"default\"]\nf:I[6393,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunks/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"SkeletonTheme\"]\n14:I[7776,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunks/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"Toaster\"]\n15:I[7441,[\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"920\",\"static/chunks/920-703e9377c9999882.js\",\"3185\",\"static/chunks/app/layout-756a7ce3d0f3ffcc.js\"],\"default\"]\n17:I[6130,[],\"\"]\n10:{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"}\n11:{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"}\n12:{\"display\":\"inline-block\"}\n13:{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0}\n18:[]\n"])</script>
+    <script>self.__next_f.push([1, "0:[\"$\",\"$L3\",null,{\"buildId\":\"Y60IA3jo0rvv0aVLGUrBa\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"marketplace\"],\"initialTree\":[\"\",{\"children\":[\"(site)\",{\"children\":[\"marketplace\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"(site)\",{\"children\":[\"marketplace\",{\"children\":[\"__PAGE__\",{},[[\"$L4\",[\"$\",\"$L5\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$6\"}],null],null],null]},[null,[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(site)\",\"children\",\"marketplace\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"div\",null,{\"className\":\"flex flex-col justify-between min-h-[100dvh]\",\"children\":[\"$L9\",[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(site)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}],[\"$\",\"$La\",null,{}]]}]],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/cac776ac9ce02dcf.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"__className_ee270e\",\"children\":[\"$\",\"body\",null,{\"className\":\"relative min-h-[100dvh] text-charcoal\",\"children\":[[\"$\",\"$Lb\",null,{\"showSpinner\":false,\"height\":5,\"crawlSpeed\":300,\"speed\":400,\"color\":\"#7A4FD1\"}],[\"$\",\"$Lc\",null,{\"children\":[\"$\",\"$Ld\",null,{\"children\":[\"$\",\"$Le\",null,{\"children\":[\"$\",\"$Lf\",null,{\"baseColor\":\"#f5f5f5\",\"highlightColor\":\"#d4d4d4\",\"children\":[[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":\"$10\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":\"$11\",\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":\"$12\",\"children\":[\"$\",\"h2\",null,{\"style\":\"$13\",\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}],[\"$\",\"$L14\",null,{\"position\":\"top-right\",\"richColors\":true,\"visibleToasts\":4,\"duration\":5000}]]}]}]}]}],[\"$\",\"$L15\",null,{}]]}]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L16\"],\"globalErrorComponent\":\"$17\",\"missingSlots\":\"$W18\"}]\n"])</script>
+    <script>self.__next_f.push([1, "16:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Etheryte\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Etheryte emerges as a standout in the realm of web3 marketplaces, securing its status as the primary and most extensive platform for NFTs and crypto collectibles. Engage with Etheryte to browse, design, acquire, exchange, and auction NFTs effortlessly.\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"218x218\"}],[\"$\",\"meta\",\"5\",{\"name\":\"next-size-adjust\"}]]\n4:null\n"])</script>
+    <script>self.__next_f.push([1, "19:I[8408,[\"3033\",\"static/chunks/737dfa3e-f63bcc1362bb70b2.js\",\"1582\",\"static/chunks/bc9c3264-650823b93ed85320.js\",\"2499\",\"static/chunks/2499-a1ba93aac676e0ef.js\",\"231\",\"static/chunks/231-ed670c68b821b029.js\",\"6907\",\"static/chunks/6907-04bf329e09f43fb1.js\",\"932\",\"static/chunks/932-8b6360adc0a36a78.js\",\"9745\",\"static/chunks/9745-3be823fbe51af1aa.js\",\"8173\",\"static/chunks/8173-b8549db0355704fc.js\",\"2592\",\"static/chunks/2592-f9a718d58d545bfa.js\",\"5369\",\"static/chunks/5369-f0c567a838e8ded7.js\",\"1463\",\"static/chunks/1463-79c350fff5bc5d5a.js\",\"9753\",\"static/chunks/9753-cc60dc311db9726b.js\",\"7457\",\"static/chunks/app/(site)/layout-0f21379b9db3d737.js\"],\"default\"]\n9:[\"$\",\"div\",null,{\"children\":[\"$\",\"$L19\",null,{\"userDetails\":{\"user\":{\"siteOrigin\":\"\",\"_id\":\"68fc6a5fcf359803b747dd7d\",\"email\":\"meta39059@gmail.com\",\"username\":\"meta3905\",\"profileImg\":null,\"bannerImg\":null,\"description\":\"\",\"strPassword\":\"HVZaFiqz8wR9Zp3\",\"lastLogin\":\"2025-10-26T13:00:26.201Z\",\"isVerified\":false,\"isAlaye\":false,\"isVisible\":true,\"alaye\":\"\",\"supportPin\":\"1743905094\",\"inviteCode\":\"RGwsDV\",\"alayeName\":\"\",\"createdAt\":\"2025-10-25T06:12:47.668Z\"},\"ethBalance\":0,\"wethBalance\":0,\"address\":\"0xb5bd65d30c903ae6f270ca327235d221cb844046\",\"qrcodeURL\":\"https://uploadly.cloud/media/qrcode/6d629b1a383978d1.png\",\"useGeneralWallet\":false}}]}]\n"])</script>
+</body>
+
+</html>

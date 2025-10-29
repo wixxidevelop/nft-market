@@ -1,0 +1,36 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+
+# Ignore local env variants but keep example
+.env*
+!.env.example
+
+# Next.js build output
+.next/
+
+# Caches and build artifacts
+.jest-cache/
+coverage/
+.swc/
+.turbo/
+
+# Logs
+logs/
+*.log
+
+# Vercel
+.vercel/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Test artifacts
+test-results/
+test-uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
