@@ -1,0 +1,29 @@
+[variables]
+# Specify Node.js version 20 or above
+NODE_VERSION = "20"
+
+[phases.setup]
+# Install Node.js 20 and npm
+nixPkgs = ["nodejs_20", "npm-9_x"]
+
+[phases.install]
+# Install dependencies
+cmds = [
+  "npm ci --prefer-offline --no-audit --progress=false --loglevel=error"
+]
+
+[phases.build]
+# Generate Prisma client and build the Next.js application
+cmds = [
+  "npx prisma generate",
+  "npm run build"
+]
+
+[start]
+# Start the production server
+cmd = "npm start"
+
+[staticAssets]
+# Serve static assets from Next.js
+"public" = "./"
+".next/static" = "./_next/static"
