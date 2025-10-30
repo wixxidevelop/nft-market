@@ -18,7 +18,7 @@ export async function GET(
     const { id } = await params;
 
     // Get NFT with all related data
-    const nft = await prisma.NFT.findUnique({
+    const nft = await prisma.nFT.findUnique({
       where: { id },
       include: {
         creator: {
@@ -78,7 +78,7 @@ export async function GET(
     }
 
     // Get similar NFTs (same category, different NFT)
-    const similarNFTs = await prisma.NFT.findMany({
+    const similarNFTs = await prisma.nFT.findMany({
       where: {
         category: nft.category,
         id: { not: nft.id },
@@ -127,7 +127,7 @@ export async function PUT(
     const { id } = await params;
 
     // Check if NFT exists and user owns it
-    const existingNFT = await prisma.NFT.findUnique({
+    const existingNFT = await prisma.nFT.findUnique({
       where: { id },
       select: {
         id: true,
@@ -153,7 +153,7 @@ export async function PUT(
     }
 
     // Update NFT
-    const updatedNFT = await prisma.NFT.update({
+    const updatedNFT = await prisma.nFT.update({
       where: { id },
       data: validation.data,
       include: {
@@ -209,7 +209,7 @@ export async function DELETE(
     const { id } = await params;
 
     // Check if NFT exists and user owns it
-    const existingNFT = await prisma.NFT.findUnique({
+    const existingNFT = await prisma.nFT.findUnique({
       where: { id },
       select: {
         id: true,
@@ -240,7 +240,7 @@ export async function DELETE(
     }
 
     // Delete NFT (this will cascade delete related records)
-    await prisma.NFT.delete({
+    await prisma.nFT.delete({
       where: { id }
     });
 

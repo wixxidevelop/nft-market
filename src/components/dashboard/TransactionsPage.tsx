@@ -54,10 +54,10 @@ export default function TransactionsPage() {
         status: tx.status,
         description: getTransactionDescription(tx),
         transactionHash: tx.transactionHash,
-        nftId: tx.nftId,
-        nft: tx.nft ? {
-          title: tx.nft.title,
-          image: tx.nft.image,
+        nftId: tx.nFTId,
+        nft: tx.nFT ? {
+          title: tx.nFT.title,
+          image: tx.nFT.image,
         } : undefined,
       }));
 
@@ -78,11 +78,11 @@ export default function TransactionsPage() {
       case 'WITHDRAWAL':
         return 'Withdrawal to wallet';
       case 'MINT':
-        return tx.nft ? `Minted "${tx.nft.title}"` : 'NFT minting fee';
+        return tx.nFT ? `Minted "${tx.nFT.title}"` : 'NFT minting fee';
       case 'SALE':
-        return tx.nft ? `Sold "${tx.nft.title}"` : 'NFT sale';
+        return tx.nFT ? `Sold "${tx.nFT.title}"` : 'NFT sale';
       case 'PURCHASE':
-        return tx.nft ? `Purchased "${tx.nft.title}"` : 'NFT purchase';
+        return tx.nFT ? `Purchased "${tx.nFT.title}"` : 'NFT purchase';
       case 'COMMISSION':
         return 'Platform commission';
       default:

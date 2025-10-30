@@ -50,12 +50,12 @@ export async function GET(req: NextRequest) {
       listedNFTs,
       soldNFTs,
     ] = await Promise.all([
-      prisma.NFT.count(),
-      prisma.NFT.count({ where: { createdAt: { gte: startOfToday } } }),
-      prisma.NFT.count({ where: { createdAt: { gte: startOfWeek } } }),
-      prisma.NFT.count({ where: { createdAt: { gte: startOfMonth } } }),
-      prisma.NFT.count({ where: { isListed: true } }),
-      prisma.NFT.count({ where: { isSold: true } }),
+      prisma.nFT.count(),
+      prisma.nFT.count({ where: { createdAt: { gte: startOfToday } } }),
+      prisma.nFT.count({ where: { createdAt: { gte: startOfWeek } } }),
+      prisma.nFT.count({ where: { createdAt: { gte: startOfMonth } } }),
+      prisma.nFT.count({ where: { isListed: true } }),
+      prisma.nFT.count({ where: { isSold: true } }),
     ]);
 
     // Get transaction statistics

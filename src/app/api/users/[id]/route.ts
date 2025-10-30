@@ -47,7 +47,7 @@ export async function GET(
     }
 
     // Get user's recent NFTs
-    const recentNFTs = await prisma.NFT.findMany({
+    const recentNFTs = await prisma.nFT.findMany({
       where: { creatorId: id },
       take: 12,
       orderBy: { createdAt: 'desc' },
@@ -112,7 +112,7 @@ export async function GET(
       _count: true,
     });
 
-    const nftStats = await prisma.NFT.aggregate({
+    const nftStats = await prisma.nFT.aggregate({
       where: { creatorId: id },
       _avg: { price: true },
       _sum: { price: true },

@@ -87,7 +87,7 @@ export async function GET(req: NextRequest) {
 
     // Get NFTs with related data
     const [nfts, totalCount] = await Promise.all([
-      prisma.NFT.findMany({
+      prisma.nFT.findMany({
         where,
         skip: offset,
         take: limit,
@@ -115,7 +115,7 @@ export async function GET(req: NextRequest) {
           }
         }
       }),
-      prisma.NFT.count({ where })
+      prisma.nFT.count({ where })
     ]);
 
     const totalPages = Math.ceil(totalCount / limit);
@@ -178,7 +178,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Create NFT
-    const nft = await prisma.NFT.create({
+    const nft = await prisma.nFT.create({
       data: {
         name,
         description,

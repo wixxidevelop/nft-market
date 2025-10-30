@@ -152,7 +152,7 @@ export async function POST(req: NextRequest) {
     const { nftId, startingPrice, reservePrice, duration } = validation.data;
 
     // Verify NFT exists and user owns it
-    const nft = await prisma.NFT.findUnique({
+    const nft = await prisma.nFT.findUnique({
       where: { id: nftId },
       include: {
         creator: true,

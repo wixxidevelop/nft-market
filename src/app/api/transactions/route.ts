@@ -134,7 +134,7 @@ export async function POST(req: NextRequest) {
     const { nftId, userId, amount, transactionHash, type } = validation.data;
 
     // Verify NFT exists
-    const nft = await prisma.NFT.findUnique({
+    const nft = await prisma.nFT.findUnique({
       where: { id: nftId },
       include: {
         creator: true,
@@ -200,7 +200,7 @@ export async function POST(req: NextRequest) {
 
       // Update NFT status for sales and transfers
       if (type === 'SALE' || type === 'TRANSFER') {
-        await tx.NFT.update({
+        await tx.nFT.update({
           where: { id: nftId },
           data: {
             isListed: false, // Remove from marketplace after sale

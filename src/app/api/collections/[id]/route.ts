@@ -55,7 +55,7 @@ export async function GET(
     }
 
     // Calculate collection stats
-    const stats = await prisma.NFT.aggregate({
+    const stats = await prisma.nFT.aggregate({
       where: { collectionId: id },
       _avg: { price: true },
       _min: { price: true },
