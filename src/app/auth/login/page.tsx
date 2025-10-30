@@ -59,7 +59,7 @@ export default function LoginPage() {
               type="text"
               value={formData.emailOrUsername}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
               placeholder="Enter your email or username"
               required
             />
@@ -75,7 +75,7 @@ export default function LoginPage() {
               type="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
               placeholder="Enter your password"
               required
             />
@@ -94,7 +94,7 @@ export default function LoginPage() {
             </label>
             <Link 
               href="/auth/reset-password" 
-              className="text-sm text-blue-600 hover:text-blue-800"
+              className="text-sm text-black hover:text-gray-800"
             >
               Forgot password?
             </Link>
@@ -109,7 +109,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? 'Signing in...' : 'Sign In'}
           </button>
@@ -120,7 +120,7 @@ export default function LoginPage() {
             Don't have an account?{' '}
             <Link 
               href="/auth/register" 
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-black hover:text-gray-800 font-medium"
             >
               Sign up
             </Link>
